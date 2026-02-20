@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../models/product.dart';
 import '../data/products_data.dart';
+import '../providers/favorites_provider.dart';
 import 'product_detail_screen.dart';
 
 class CatalogScreen extends StatelessWidget {
@@ -114,6 +116,21 @@ class ProductCard extends StatelessWidget {
                   ],
                 ),
               ),
+
+              Consumer<FavoritesProvider>(
+                builder: (context, favorites, child) {
+                  final isFavorite = favorites.isFavorite(product.id);
+                  return IconButton(
+                    onPressed: () {
+                      favorites.toggleFavorite(product);
+                    },
+                    icon: Icon(
+                      isFavorite ? Icons.favorite : Icons.favorite_border,
+                      color: isFavorite ? Colors.red : Colors.grey,
+                    ),
+                  );
+                },
+              )
             ],
           )
         )
