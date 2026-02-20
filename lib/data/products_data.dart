@@ -1,0 +1,68 @@
+import '../models/product.dart';
+
+final List<Product> sampleProducts = [
+  Product(
+    id: '1',
+    name: 'Pizza Margherita',
+    description: 'Pizza clássica com molho de tomate, mussarela e manjericão',
+    price: 45.90,
+    imageUrl: '🍕',
+    category: 'Pizzas',
+  ),
+  Product(
+    id: '2',
+    name: 'Hambúrguer Artesanal',
+    description: 'Pão brioche, blend 180g, queijo cheddar e bacon',
+    price: 32.90,
+    imageUrl: '🍔',
+    category: 'Hambúrgueres',
+  ),
+  Product(
+    id: '3',
+    name: 'Sushi Combo',
+    description: '20 peças variadas de sushi e sashimi',
+    price: 89.90,
+    imageUrl: '🍣',
+    category: 'Japonês',
+  ),
+  Product(
+    id: '4',
+    name: 'Salada Caesar',
+    description: 'Alface romana, croutons, parmesão e molho caesar',
+    price: 28.50,
+    imageUrl: '🥗',
+    category: 'Saladas',
+  ),
+  Product(
+    id: '5',
+    name: 'Açaí 500ml',
+    description: 'Açaí puro com granola, banana e mel',
+    price: 18.90,
+    imageUrl: '🍇',
+    category: 'Sobremesas',
+  ),
+  Product(
+    id: '6',
+    name: 'Pasta Carbonara',
+    description: 'Espaguete com molho carbonara, bacon e parmesão',
+    price: 42.00,
+    imageUrl: '🍝',
+    category: 'Massas',
+  ),
+  Product(
+    id: '7',
+    name: 'Tacos Mexicanos',
+    description: 'Trio de tacos com carne, guacamole e pico de gallo',
+    price: 35.90,
+    imageUrl: '🌮',
+    category: 'Mexicano',
+  ),
+  Product(
+    id: '8',
+    name: 'Brownie com Sorvete',
+    description: 'Brownie quente com sorvete de baunilha e calda',
+    price: 22.90,
+    imageUrl: '🍰',
+    category: 'Sobremesas',
+  ),
+];
